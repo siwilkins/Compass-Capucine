@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "compass-capucine.gemspec",
     "lib/compass-capucine.rb",
     "stylesheets/_compass-capucine.scss",
     "stylesheets/compass-capucine/_box.sass",
