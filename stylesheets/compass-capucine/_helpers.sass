@@ -72,8 +72,11 @@
   &:active
     position: relative
     top: $top
-    @if $left { left: $left }
-    @if $right { right: $right }
+
+    @if $left
+      left: $left
+    @if $right
+      right: $right
 
 =vertical-gradient($top: #222, $bottom: #777)
   +background-image(linear-gradient($top, $bottom))
@@ -100,9 +103,6 @@ $capucine-helpers-classes: true !default
 
   .cb
     +clear-both
-
-  .ir
-    +image-replace
 
   .scale
     +scale

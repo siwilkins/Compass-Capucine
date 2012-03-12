@@ -11,7 +11,9 @@
 @import "compass/utilities/general/min"
 
 =box($width: 100px, $height: 50px, $display: false)
-  @if $display { display: $display }
+  @if $display
+    display: $display
+
   height: $height
   width: $width
 
@@ -21,7 +23,9 @@
   +border-radius($diam)
 
 =square($size: 200px, $display: false)
-  @if $display { display: $display }
+  @if $display
+    display: $display
+
   width: $size
   height: $size
 
