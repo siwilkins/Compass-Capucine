@@ -1,49 +1,72 @@
-# rcov generated
-coverage
-coverage.data
+pkg/
 
-# rdoc generated
-rdoc
 
-# yard generated
-doc
-.yardoc
+#=================================
+# OS :
+.DS_Store*
+.cache
+.project
+.settings
+ehthumbs.db
+Icon?
+nbproject
+Thumbs.db
 
-# bundler
-.bundle
+# COMPRESS :
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# jeweler generated
-pkg
+# KOMODO
+*.komodoproject
+.komodotools
 
-# Have editor/IDE/OS specific files you need to ignore? Consider using a global gitignore: 
-#
-# * Create a file at ~/.gitignore
-# * Include files you want ignored
-# * Run: git config --global core.excludesfile ~/.gitignore
-#
-# After doing this, these files will be ignored in all your git projects,
-# saving you from having to 'pollute' every project you touch with them
-#
-# Not sure what to needs to be ignored for particular editors/OSes? Here's some ideas to get you started. (Remember, remove the leading # of the line)
-#
-# For MacOS:
-#
-#.DS_Store
+# DREAMWEAVER :
+_notes
+dwsync.xml
 
-# For TextMate
-#*.tmproj
-#tmtags
+# VERSIONS
+.hg
+.svn
+.CVS
+.idea
 
-# For emacs:
-#*~
-#\#*
-#.\#*
+# BINARY / GENERATED :
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.swp
+*.sass-cache
+*.diff
+*.err
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.log
+*~
 
-# For vim:
-#*.swp
+# SQL :
+*.sql
+*.sqlite
 
-# For redcar:
-#.redcar
+# XCODE : 
+*~.nib
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.xcuserstate
+xcuserdata/
+*.mode1v3
+*.mode2v3
 
-# For rubinius:
-#*.rbc

@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "compass-capucine"
   gem.homepage = "http://github.com/damln/compass-capucine"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Compass Plugin with helpers}
+  gem.description = %Q{Compass Plugin with helpers}
   gem.email = "dam@dln.name"
   gem.authors = ["Damian Le Nouaille"]
   # dependencies defined in Gemfile

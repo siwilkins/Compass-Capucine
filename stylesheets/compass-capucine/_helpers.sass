@@ -1,0 +1,108 @@
+/*
+  +unselectable
+  +hidden
+  +visually-hidden
+  +clear-both
+  +scale
+  +selection
+  +pressed-effect
+  +vertical-gradient
+  +fake-helvetica
+  +smart-text-shadow
+
+@import "compass/css3/images"
+@import "compass/css3/text-shadow"
+
+=unselectable()
+  -moz-user-select: -moz-none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  user-select: none
+
+=hidden()
+  display: none
+  visibility: hidden
+  overflow: hidden
+
+=visually-hidden()
+  border: 0
+  padding: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  width: 1px
+  margin: -1px
+  overflow: hidden
+  position: absolute
+  &.focusable
+    &:active, &:focus
+      clip: auto
+      height: auto
+      padding: 0
+      margin: 0
+      overflow: visible
+      position: static
+      width: auto
+
+=clear-both()
+  clear: both
+  display: block
+  zoom: 1
+  &:before, &:after
+    content: "\0020"
+    display: block
+    height: 0
+    overflow: hidden
+  &:after
+    clear: both
+
+=scale()
+  max-width: 100%
+  height: auto
+
+=selection($background: #111, $color: #fff)
+  ::-moz-selection
+    background: $background
+    color: $color
+
+  ::selection
+    background: $background
+    color: $color
+
+=pressed-effect($top: 1px, $left: false, $right: false)
+  &:active
+    position: relative
+    top: $top
+    @if $left { left: $left }
+    @if $right { right: $right }
+
+=vertical-gradient($top: #222, $bottom: #777)
+  +background-image(linear-gradient($top, $bottom))
+  +filter-gradient($top, $bottom)
+
+=fake-helvetica($fonts: sans-serif)
+  font-family: Arial, $fonts
+  letter-spacing: -1px
+
+=smart-text-shadow($color: #fff, $pixels: 1px)
+  +text-shadow($color 0 $pixels 0)
+
+$capucine-helpers-classes: true !default
+@if $capucine-helpers-classes == true
+
+  .unselectable
+    +unselectable
+
+  .hidden
+    +hidden
+
+  .visually-hidden
+    +visually-hidden
+
+  .cb
+    +clear-both
+
+  .ir
+    +image-replace
+
+  .scale
+    +scale
