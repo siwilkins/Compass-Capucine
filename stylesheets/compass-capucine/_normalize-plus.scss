@@ -9,5 +9,21 @@ dd {
 
 li {
     list-style-type: none;
-
 }
+
+.ie6 hr, .ie7 hr {
+  margin-top: -0.5em;
+}
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+

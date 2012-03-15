@@ -3,7 +3,7 @@
   +hidden
   +visually-hidden
   +clear-both
-  +scale
+  +scale-img
   +selection
   +pressed-effect
   +vertical-gradient
@@ -20,9 +20,8 @@
   user-select: none
 
 =hidden()
-  display: none
+  display: none !important
   visibility: hidden
-  overflow: hidden
 
 =visually-hidden()
   border: 0
@@ -43,19 +42,17 @@
       position: static
       width: auto
 
-=clear-both()
+=clearfix()
   clear: both
   display: block
-  zoom: 1
+  *zoom: 1
   &:before, &:after
     content: "\0020"
-    display: block
-    height: 0
-    overflow: hidden
+    display: table
   &:after
     clear: both
 
-=scale()
+=scale-img()
   max-width: 100%
   height: auto
 
@@ -95,14 +92,8 @@ $capucine-helpers-classes: true !default
   .unselectable
     +unselectable
 
-  .hidden
-    +hidden
-
-  .visually-hidden
-    +visually-hidden
-
-  .cb
-    +clear-both
+  .cf
+    +clearfix
 
   .scale
-    +scale
+    +scale-img
