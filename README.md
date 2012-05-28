@@ -2,7 +2,7 @@
 
 You can take a look at [Capucine](http://github.com/damln/Capucine).  
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="damln">Tweet This</a>
+<a target="_blank" href="https://twitter.com/share" class="twitter-share-button" data-via="damln">Tweet This</a>
 
 
 ## Usage
