@@ -1,14 +1,4 @@
 /*
-  +unselectable
-  +hidden
-  +visually-hidden
-  +clear-both
-  +scale-img
-  +selection
-  +pressed-effect
-  +vertical-gradient
-  +fake-helvetica
-  +smart-text-shadow
 
 @import "compass/css3/images"
 @import "compass/css3/text-shadow"
@@ -84,7 +74,18 @@
   letter-spacing: -1px
 
 =smart-text-shadow($color: #fff, $pixels: 1px)
-  +text-shadow($color 0 $pixels 0)
+  @if $color
+    $c: $color
+  @else
+    $c: #fff
+
+  @if $pixels
+    $p: $pixels
+  @else
+    $p: 1px
+
+
+  +text-shadow($c 0 $p 0)
 
 $capucine-helpers-classes: true !default
 @if $capucine-helpers-classes == true

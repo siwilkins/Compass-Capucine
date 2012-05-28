@@ -11,6 +11,39 @@ li {
     list-style-type: none;
 }
 
+// Chrome blue glow :
+select, option, input, textarea, button {
+  outline: none;
+  font-size: 0.99em;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input {
+  &[type="radio"] {
+    vertical-align: text-bottom;
+  }
+
+  &[type="text"] {
+    cursor: text;
+  }
+
+  &[type="checkbox"] {
+    vertical-align: bottom;
+  }
+
+  &[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+}
+
+
+//==========[ IE ]==================
 .ie6 hr, .ie7 hr {
   margin-top: -0.5em;
 }
